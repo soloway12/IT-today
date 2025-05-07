@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo .highlight {
+    color: #28a745;
+  }
+  
+  .nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: #28a745;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .content h1 {
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  

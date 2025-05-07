@@ -1,0 +1,366 @@
+/* Общие настройки */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1b16;
+  color: #c4f0c2;
+}
+
+/* Навбар */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b1512;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1f3b2f;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #92ff78;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #b4e0c2;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #92ff78;
+}
+
+/* Кнопки */
+.get-started {
+  background-color: #45ff2e;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.get-started:hover {
+  background-color: #34d120;
+}
+
+/* Секция статей */
+.articles {
+  padding: 40px 20px;
+  background-color: #0f1f19;
+  color: #e4e4e4;
+  text-align: center;
+}
+
+.articles h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #90ee90;
+}
+
+.article {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  background-color: #0b1512;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #54ff9f;
+}
+
+.article p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #c3f7c3;
+}
+
+/* Секция героя */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('/home/soloway/Programs/VSC file/wmremove-transformed.png'); /* Укажите путь к вашей картинке */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный слой */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Темный фон для текста */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero .btn-green {
+  padding: 10px 20px;
+  background-color: #54ff9f;
+  color: #0a0f0d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn-green:hover {
+  background-color: #0a0f0d;
+  color: #54ff9f;
+  border: 2px solid #54ff9f;
+}
+
+.card, .card2 {
+  background-color: black; /* Черный фон */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover, .card2:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .btn-green {
+      padding: 8px 16px;
+  }
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav a {
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar {
+      flex-direction: column;
+  }
+}
+
+.btn-green {
+  background-color: #45ff2e;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-green:hover {
+  background-color: #34d120;
+  transform: scale(1.1);
+}
+
+/* Основные стили */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1b16;
+  color: #c4f0c2;
+}
+
+/* Сетка для карточек */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряд */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Контейнер карточек */
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Чтобы карточки могли переходить на новую строку */
+  gap: 20px; /* Расстояние между карточками */
+  justify-content: flex-start; /* Размещение карточек слева */
+}
+
+/* Карточки */
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: black; /* Черный фон */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+/* Индивидуальные фоны для каждой карточки */
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+  background-color: black; /* Черный фон */
+  background-image: none; /* Убираем изображение фона */
+}
+.cards a {
+  text-decoration: none; /* Убирает подчеркивание у ссылок */
+  color: inherit; /* Наследует цвет текста от родителя */
+  display: block; /* Делает всю карточку кликабельной */
+}
+
+/* Секция "Почему стоит изучать IT?" */
+.intro {
+  padding: 60px 20px;
+  background-color: #0f1f19; /* Темный фон */
+  color: #c4f0c2; /* Светлый текст */
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #90ee90; /* Зеленый акцент */
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #c3f7c3;
+}
+.logo {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет текста */
+  font-size: 1.5rem; /* Размер шрифта */
+  font-weight: bold; /* Жирный текст */
+}
+
+.logo:hover {
+  color: #28a745; /* Зеленый цвет при наведении */
+}
+#cards {
+  background-image: url('/home/soloway/Programs/VSC file/5052196.jpg'); /* шлях до зображення */
+  background-size: cover; /* щоб зображення покривало всю зону */
+  background-position: center; /* вирівнювання по центру */
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+
