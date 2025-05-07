@@ -96,7 +96,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('/home/soloway/Programs/VSC file/wmremove-transformed.png'); /* Укажите путь к вашей картинке */
+  background-image: url('img/wmremove-transformed.png'); 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -353,7 +353,7 @@ body {
   color: #28a745; /* Зеленый цвет при наведении */
 }
 #cards {
-  background-image: url('/home/soloway/Programs/VSC file/5052196.jpg'); /* шлях до зображення */
+  background-image: url('img/5052196.jpg'); /* шлях до зображення */
   background-size: cover; /* щоб зображення покривало всю зону */
   background-position: center; /* вирівнювання по центру */
   padding: 40px;
