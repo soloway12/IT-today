@@ -14,7 +14,7 @@
     .card {
       background-color: black; /* Черный фон для карточек */
       color: white; /* Белый цвет текста */
-      padding: 20px;
+      padding: 100px;
       margin: 10px;
       border-radius: 10px;
     }
@@ -22,21 +22,17 @@
 </head>
 <body>
 
-  <header class="navbar">
-    <header class="navbar">
-      <a href="index.html" class="logo">IT <span class="highlight">Today</span></a>
+  <div id="header-placeholder"></div>
+  <link rel="stylesheet" href="header.css">
 
-    </header>
-    
-    <nav class="nav">
-      <a href="#">Главная</a>
-      <a href="#">Особенности</a>
-      <a href="#">Как это работает</a>
-      <a href="#">Применение</a>
-      <a href="#">Отзывы</a>
-    </nav>
-    <a href="#" class="btn-green">Начать</a>
-  </header>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+  
 
   <section class="hero">
     <div class="hero-overlay"></div> 
@@ -55,47 +51,43 @@
     </div>
   </section>
 
+
+<div class='back123'> 
+
+
+
+
+
+<!-- From Uiverse.io by satyamchaudharydev --> 
+<div class="card">
+  <h3 class="card__title">Title
+  </h3>
+  <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  <div class="card__date">
+      April 15, 2022
+  </div>
+  <div class="card__arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+      </svg>
+  </div>
+</div>
   
+
   
-  <section id="cards" class="cards">
-    <!-- Карточки -->
-      <a href="history.html" class="card card1">
-        <p class="heading green-text">Історія розвитку комп'ютерів</p>
-        <p>Від перших механічних обчислювальних машин до сучасних комп'ютерних систем.</p>
-      </a>
-      <a href="os-basics.html" class="card card2">
-        <p class="heading green-text">Основи операційних систем</p>
-        <p>Що таке операційна система і як вона еволюціонувала з часом.</p>
-      </a>
-      <a href="networks.html" class="card card3">
-        <p class="heading green-text">Мережі та комунікації</p>
-        <p>Як працюють комп'ютерні мережі, інтернет та їхній вплив на сучасний світ.</p>
-      </a>
-      <a href="programming.html" class="card card4">
-        <p class="heading green-text">Програмування та мови програмування</p>
-        <p>Основи програмування і розвиток мов програмування.</p>
-      </a>
-      <a href="cybersecurity.html" class="card card5">
-        <p class="heading green-text">Кібербезпека</p>
-        <p>Сучасні загрози в мережі, принципи захисту та методи забезпечення безпеки.</p>
-      </a>
-      <a href="ai.html" class="card card6">
-        <p class="heading green-text">Штучний інтелект (ШІ)</p>
-        <p>Як ШІ змінює світ, від машинного навчання до автоматизації.</p>
-      </a>
-      <a href="blockchain.html" class="card card7">
-        <p class="heading green-text">Блокчейн та криптовалюти</p>
-        <p>Основи технології блокчейн, криптовалюти та їхній вплив на фінансову сферу.</p>
-      </a>
-      <a href="cloud.html" class="card card8">
-        <p class="heading green-text">Віртуалізація та хмарні технології</p>
-        <p>Що таке хмарні обчислення, віртуалізація серверів і як це змінює ІТ-інфраструктуру.</p>
-      </a>
-      <a href="future.html" class="card card9">
-        <p class="heading green-text">Майбутнє ІТ</p>
-        <p>Тенденції, які формуватимуть розвиток технологій в найближчі десятиліття (квантові комп'ютери, біотехнології в ІТ тощо).</p>
-      </a>
-    </div>
-  </section>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  
 </body>
 </html>
