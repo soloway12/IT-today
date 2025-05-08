@@ -1,0 +1,59 @@
+/* Стили для хедера */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  padding: 11px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 20px; /* Добавляем отступ слева */
+}
+
+.highlight {
+  color: #00ff75;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #00ff75;
+}
+
+.btn-green {
+  background-color: #00ff75;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 40px;
+}
+
+.btn-green:hover {
+  background-color: #00642f;
+}
+
+/* Чтобы основной контент не заезжал под хедер */
+body {
+  margin-top: 60px;
+}
